@@ -1,0 +1,98 @@
+.ls,.rs {
+  height: 50vh;
+  width:100%;
+}
+
+@media screen and (min-width:768px){
+  .ls,.rs{
+    height:100vh;
+  }
+
+}
+@media screen and (max-width:768px){
+  img{
+    display: none;
+  }
+}
+
+.ls{
+  color:white;
+  text-align: center;
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+  padding:10px;
+  /* font-family: 'Satisfy', cursive;
+  font-family: 'Niconne', cursive;
+  font-family: 'Yesteryear', cursive; */
+}
+
+.rs{
+  background-color: #FFFFF;
+  color:black;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  padding:10px;
+}
+
+h3{
+  padding:15px;
+}
+
+p{
+
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-align: center;
+  /* font-family: 'Libre Baskerville', serif; */
+}
+
+
+img{
+  height: auto;
+  width:70%;
+}
+
+em{
+  color:red;
+}
+a{
+  color:black;
+}
+a:link {
+  color: black;
+}
+
+a:active{
+  color:black
+}
+
+a:hover{
+  color: hotpink;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}

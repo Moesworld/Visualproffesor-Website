@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Niconne|Satisfy|Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display&display=swap" rel="stylesheet">
+    <!-- CUSTOMSTYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
+    <title>Visualproffesor</title>
+  </head>
+  <body>
+    <div class="row no-gutters">
+      <div class="col-md-6 no-gutters">
+        <div class="ls">
+          <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/films">Films</a>
+            <a href="/photo">Photography</a>
+            <a href="/contact">Contact</a>
+          </div>
+          <h1>Visualproffesor</h1>
+          <br>
+            <p>
+              I am a young creative from Toronto
+              who speacializes in video, photo,
+              graphic design, creative directing,
+              and social media marketing.<br>
+              <br />
+
+              <!-- Services include: Music Videos, Photography sessions, logo design
+              , Event Media Services, Visual Fx, Cover Art design, Instagram Content. -->
+
+            </p>
+          <br />
+          <div class="imgbox">
+            <p><img src="images/profilepic.jpg" alt="profilepic"></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6 no-gutters">
+        <div class="rs">
+          <br>
+          <br>
+
+          <a href="/films"><h3>Films</h3></a>
+          <a href="/photo"><h3>Photography</h3></a>
+          <a href="#"><h3>Graphic design</h3></a>
+          <a href="/contact"><h3>Contact</h3></a>
+
+
+          <br>
+          <br>
+            <p id="changeText" style="color:#f10000;">That's what we storytellers do. We restore order with imagination. We instill hope again and again and again.</p>
+          <br>
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+      <script>
+        var text = ["Cinema is a matter of what's in the frame and what's out",
+        "Film is, to me, just unimportant. But people are very important."
+        ,"I have often thought it was very arrogant to suppose you could make a film for anybody but yourself."
+        ,"Some people take pretty pictures of nothing. I'd rather record grime that means something."
+        ,"Most of the good things in pictures happen by accident"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        var inst = setInterval(change, 5000);
+
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+    </script>
+  </body>
+</html>
